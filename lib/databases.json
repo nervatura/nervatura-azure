@@ -1,0 +1,58 @@
+{
+  "demo": {
+    "engine": "sqlite", 
+    "connect": {
+      "host": "", 
+      "port": "", 
+      "dbname": "demo", 
+      "username": "", 
+      "password": "" },
+    "settings":{
+      "db_ssl": false,
+      "ndi_enabled": true, 
+      "encrypt_password": "", 
+      "dbs_host_restriction": "" }
+  },
+  "mydemo": {
+    "engine": "mysql", 
+    "connect": {
+      "host": "$AZURE_MYSQL_HOST", 
+      "port": "3306", 
+      "dbname": "nervatura", 
+      "username": "$AZURE_MYSQL_USERNAME", 
+      "password": "$AZURE_MYSQL_PASSWORD" },
+    "settings":{
+      "db_ssl": true,
+      "ndi_enabled": true, 
+      "encrypt_password": "", 
+      "dbs_host_restriction": "" }
+  },
+  "pgdemo": {
+    "engine": "postgres", 
+    "connect": {
+      "host": "$AZURE_PG_HOST", 
+      "port": "5432", 
+      "dbname": "nervatura", 
+      "username": "$AZURE_PG_USERNAME", 
+      "password": "$AZURE_PG_PASSWORD" },
+    "settings":{
+      "db_ssl": true,
+      "ndi_enabled": true, 
+      "encrypt_password": "", 
+      "dbs_host_restriction": "" }
+  },
+  "msdemo": {
+    "engine": "mssql", 
+    "connect": {
+      "host": "$AZURE_SQL_HOST", 
+      "port": "1433", 
+      "dbname": "nervatura", 
+      "username": "$AZURE_SQL_USERNAME", 
+      "password": "$AZURE_SQL_PASSWORD" },
+    "settings":{
+      "db_ssl": true,
+      "ndi_enabled": true, 
+      "encrypt_password": "", 
+      "dbs_host_restriction": "" }
+  }
+}
